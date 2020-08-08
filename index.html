@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>p2Key.com</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/uikit.min.css" />
+      <script src="js/uikit.min.js"></script>
+      <script src="js/uikit-icons.min.js"></script>
+      <link rel="shortcut icon" type="image/x-icon" href="p2k.ico" />
+   </head>
+   <body>
+      <nav class="uk-navbar-container uk-margin" uk-navbar>
+         <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left">
+               <div>
+                  <ul class="uk-navbar-nav">
+                     <li class="uk-active"><a href="#">Home</a></li>
+                     <li>
+                        <a href="#">Products</a>
+                        <div class="uk-navbar-dropdown">
+                           <ul class="uk-nav uk-navbar-dropdown-nav">
+                              <li><a href="#">P2K server</a></li>
+                              <li><a href="#">P2K gateway</a></li>
+                              <li><a href="#">P2K proxy</a></li>
+							  <li><a href="#">P2K auth</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <a class="uk-navbar-item uk-logo" href="#"><img src="img/logo.png" width="60px"/></a>
+            <div class="uk-navbar-center-right">
+               <div>
+                  <ul class="uk-navbar-nav">
+                     <li><a href="#">Tutorials</a></li>
+                     <li><a href="#">Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div class="uk-container uk-container-small">
+         <div class="uk-grid-match uk-grid-small" uk-grid>
+            <div class="uk-width-2-5@m">
+			   <div>
+					<div class="uk-dark uk-padding">
+						<h4 class="uk-heading-line"><span>Recent Updates</span></h4>
+						<p class="uk-heading-bullet">There are many software products under the p2key platform. <a href="#modal-1" uk-toggle>Click</a> for more information</p>
+						<hr>
+						<p class="uk-heading-bullet">Welcome to p2key's world!</p>
+					</div>
+				</div>
+            </div>
+            <div class="uk-width-3-5@m">
+				   <div>
+						<div class="uk-dark uk-padding">
+							<div uk-grid>
+								<div class="uk-width-auto@m uk-flex-last@m">
+									<ul class="uk-tab-right" uk-tab="connect: #component-tab-right; animation: uk-animation-fade">
+										<li><a href="#">news</a></li>
+										<li><a href="#">events</a></li>
+										<li><a href="#">support</a></li>
+									</ul>
+								</div>
+								<div class="uk-width-expand@m">
+									<ul id="component-tab-right" class="uk-switcher">
+										<li>Not missed yet.</li>
+										<li>Not missed yet.</li>
+										<li>Not missed yet.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+            </div>
+			
+         </div>
+		 <hr class="uk-divider-icon">
+		 <div class="uk-dark uk-text-center uk-text-small">Copyrighted. © p2Key 2020</div>
+      </div>
+	  
+	  <!-- This is the modal -->
+		<div id="modal-1" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h3 class="uk-modal-title">Information</h3>
+				<p>Not missed yet..</p>
+			</div>
+		</div>
+   </body>
+</html>
