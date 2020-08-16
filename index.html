@@ -8,6 +8,20 @@
       <script src="js/uikit.min.js"></script>
       <script src="js/uikit-icons.min.js"></script>
       <link rel="shortcut icon" type="image/x-icon" href="p2k.ico" />
+      <style>
+      .uk-heading-bullet.uk-align-left.recent-update {
+      	margin-right: 0px;
+      }
+      
+      .uk-text-small.date {
+      	line-height: 1.6;
+      }
+      
+      .uk-label.date{
+      	font-size:10px;
+      }
+      
+      </style>
    </head>
    <body>
       <nav class="uk-navbar-container uk-margin" uk-navbar>
@@ -15,17 +29,11 @@
             <div class="uk-navbar-center-left">
                <div>
                   <ul class="uk-navbar-nav">
-                     <li class="uk-active"><a href="#">Home</a></li>
                      <li>
                         <a href="#">Products</a>
                         <div class="uk-navbar-dropdown">
                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                              <li><a href="#">P2K server</a></li>
-                              <li><a href="#">P2K proxy</a></li>
-                              <li><a href="#">P2K service</a></li>
-                              <li><a href="#">P2K gateway</a></li>
-                              <li><a href="#">P2K balancer</a></li>
-							  <li><a href="#">P2K auth</a></li>
+                              <li><a href="#"><span uk-icon="server"></span> P2K Framework</a></li>
                            </ul>
                         </div>
                      </li>
@@ -36,7 +44,6 @@
             <div class="uk-navbar-center-right">
                <div>
                   <ul class="uk-navbar-nav">
-                     <li><a href="#">Tutorials</a></li>
                      <li><a href="#">Contact</a></li>
                   </ul>
                </div>
@@ -49,11 +56,13 @@
 			   <div>
 					<div class="uk-dark uk-padding">
 						<h4 class="uk-heading-line"><span>Recent Updates</span></h4>
-						<p class="uk-heading-bullet uk-align-left" style="margin-right: 0px;"><div class="uk-text-small" style="line-height: 1.6;"><span class="uk-label" style="font-size:10px;">13.08.2020</span> - <a href="https://github.com/p2key/p2key-server"><span uk-icon="icon: github; ratio: 0.8"></span> p2k-server</a></div>p2k-server works by communicating with HTTP header.</p>
+						<p class="uk-heading-bullet uk-align-left recent-update"><div class="uk-text-small date"><span class="uk-label date">14.08.2020</span> - <a href="https://github.com/p2key/p2key-server"><span uk-icon="icon: github; ratio: 0.8"></span> p2k-server</a></div>added file-based logger to p2-key server.</p>
 						<hr>
-						<p class="uk-heading-bullet">There are many software products under the p2key platform. <a href="#modal-1" uk-toggle>Click</a> for more information</p>
+						<p class="uk-heading-bullet uk-align-left recent-update"><div class="uk-text-small date"><span class="uk-label date">13.08.2020</span> - <a href="https://github.com/p2key/p2key-server"><span uk-icon="icon: github; ratio: 0.8"></span> p2k-server</a></div>p2k-server works by communicating with HTTP header.</p>
 						<hr>
-						<p class="uk-heading-bullet">Welcome to p2key's world!</p>
+						<p class="uk-heading-bullet uk-align-left recent-update"><div class="uk-text-small date"><span class="uk-label date">09.08.2020</span></div>There are many software products under the p2key platform. <a href="#modal-1" uk-toggle>Click</a> for more information</p>
+						<hr>
+						<p class="uk-heading-bullet uk-align-left recent-update"><div class="uk-text-small date"><span class="uk-label date">07.08.2020</span></div>Welcome to p2key's world!</p>
 					</div>
 				</div>
             </div>
