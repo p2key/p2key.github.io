@@ -1,0 +1,27 @@
+title: p2Key
+description: Birşeyler kodluyoruz
+baseurl: ''
+url: 'https://p2key.github.io'
+include:
+  - _pages
+google_analytics: UA—XXXXXXXX-X
+# Author
+author:
+  name: Mesut Üşenmez
+  url: 'http://p2key.com'
+  email: mesutusenmez89@gmail.com
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+permalink: '/:year-:month-:day/:title'
+paginate: 5
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - tale.gemspec
+disqus: https-p2key-github-io
