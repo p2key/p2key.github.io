@@ -8,6 +8,6 @@ tags:
 
 Merhaba, 
 
-Bura alanda birlikte birşeyler kodlayacağız.
+Bu alanda birlikte birşeyler kodlayacağız.
 
 Görüşmek üzere.
