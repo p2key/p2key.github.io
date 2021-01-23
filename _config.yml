@@ -24,4 +24,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - tale.gemspec
+  - vendor
 disqus: https-p2key-github-io
