@@ -4,7 +4,7 @@ baseurl: ''
 url: 'https://p2key.github.io'
 include:
   - _pages
-google_analytics: G-1HXWK2CKN5
+google_analytics: UA-188010336-1
 # Author
 author:
   name: Mesut Üşenmez
