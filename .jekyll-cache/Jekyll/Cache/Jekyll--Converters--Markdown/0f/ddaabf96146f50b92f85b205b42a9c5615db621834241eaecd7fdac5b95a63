@@ -1,0 +1,23 @@
+I"�<p>Hello everyone,</p>
+
+<p>Today I’m starting to develop a new note application. I hope it helps you this article series. Because I’m going to cover all development processes on simple way.</p>
+
+<p>Let’s start by designing  use case diagrams.</p>
+
+<p>Mobile devices are most connected to Internet as you know. That’s why we chose mobile users as actor in the  use case diagrams and  there are 6 use cases.</p>
+
+<p>Below shown use case diagram:
+<img src="/assets/img/noteapp_use_cases.png" alt="" /></p>
+
+<p><br /></p>
+
+<p>It is wrote user stories to better explain the  user diagram.</p>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<p><strong>User Story 1</strong>: Show All Notes <br />
+<strong>Priority:</strong>:</p>
+:ET

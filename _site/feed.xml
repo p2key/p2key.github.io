@@ -1,5 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://p2key.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://p2key.github.io/" rel="alternate" type="text/html" /><updated>2021-01-25T00:18:34+03:00</updated><id>https://p2key.github.io/feed.xml</id><title type="html">p2Key</title><subtitle>Birşeyler kodluyoruz</subtitle><author><name>Mesut Üşenmez</name><email>mesutusenmez89@gmail.com</email></author><entry><title type="html">Merhaba Dünya!</title><link href="https://p2key.github.io/2021-01-23/merhaba-dunya" rel="alternate" type="text/html" title="Merhaba Dünya!" /><published>2021-01-23T00:00:00+03:00</published><updated>2021-01-23T00:00:00+03:00</updated><id>https://p2key.github.io/2021-01-23/merhaba-dunya</id><content type="html" xml:base="https://p2key.github.io/2021-01-23/merhaba-dunya">&lt;p&gt;Merhaba,&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://p2key.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://p2key.github.io/" rel="alternate" type="text/html" /><updated>2021-01-26T01:32:40+03:00</updated><id>https://p2key.github.io/feed.xml</id><title type="html">p2Key</title><subtitle>Birşeyler kodluyoruz</subtitle><author><name>Mesut Üşenmez</name><email>mesutusenmez89@gmail.com</email></author><entry><title type="html">Note Application - Use Cases-I</title><link href="https://p2key.github.io/2021-01-25/note-application-use-cases-i" rel="alternate" type="text/html" title="Note Application - Use Cases-I" /><published>2021-01-25T00:00:00+03:00</published><updated>2021-01-25T00:00:00+03:00</updated><id>https://p2key.github.io/2021-01-25/note-application-use-cases-i</id><content type="html" xml:base="https://p2key.github.io/2021-01-25/note-application-use-cases-i">&lt;p&gt;Hello everyone,&lt;/p&gt;
 
-&lt;p&gt;Bu alanda birlikte birşeyler kodlayacağız.&lt;/p&gt;
+&lt;p&gt;Today I’m starting to develop a new note application. I hope it helps you this article series. Because I’m going to cover all development processes on simple way.&lt;/p&gt;
 
-&lt;p&gt;Görüşmek üzere.&lt;/p&gt;</content><author><name>Mesut Üşenmez</name><email>mesutusenmez89@gmail.com</email></author><category term="hello" /><summary type="html">Merhaba,</summary></entry></feed>
+&lt;p&gt;Let’s start by designing  use case diagrams.&lt;/p&gt;
+
+&lt;p&gt;Mobile devices are most connected to Internet as you know. That’s why we chose mobile users as actor in the  use case diagrams and  there are 6 use cases.&lt;/p&gt;
+
+&lt;p&gt;Below shown use case diagram:
+&lt;img src=&quot;/assets/img/noteapp_use_cases.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is wrote user stories to better explain the  user diagram.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;User Story 1:&lt;/strong&gt; Show All Notes &lt;br /&gt;
+&lt;strong&gt;Priority:&lt;/strong&gt; High &lt;br /&gt;
+&lt;strong&gt;Estimate:&lt;/strong&gt; 13 &lt;br /&gt;
+&lt;strong&gt;Description:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
+&lt;pre&gt;
+ 1. Click the note application on mobile phone
+ 2. Get notes by limit 10 from database
+ 3. List notes that got in.
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Acceptance Criterias:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
+&lt;pre&gt;
+ 1. Listed notes must be clickable.
+ 2. User can load 10 notes when click &quot;load more&quot; button everytimes.
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Everything is OK for the user story  ? :) Unfortunately NO! Some statements appear unclear. For example; “Get notes by limit 10 from database”. How?
+You should explain it such that you can’t ask the question of HOW.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s write this row again.&lt;/p&gt;
+
+&lt;pre&gt;
+ - Connect the local database by &quot;Room&quot; persistence library provided by Android
+ - Get &quot;id&quot;, &quot;title&quot;, &quot;content&quot;, &quot;create date&quot;, &quot;update date&quot; values of &quot;NOTES&quot; table for 10 records using Room
+&lt;/pre&gt;
+
+&lt;p&gt;That is better than before. We explained better how to do it. But It is not still what we want.&lt;/p&gt;
+
+&lt;p&gt;“List notes that got in”. How?&lt;/p&gt;
+
+&lt;p&gt;Write the sentence again.&lt;/p&gt;
+
+&lt;pre&gt;
+- List &quot;title&quot; and &quot;create date &quot; of each note item.
+&lt;/pre&gt;
+
+&lt;p&gt;Now that’s allright.&lt;/p&gt;
+
+&lt;p&gt;In last status the user story:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;User Story 1:&lt;/strong&gt; Show All Notes &lt;br /&gt;
+&lt;strong&gt;Priority:&lt;/strong&gt; High &lt;br /&gt;
+&lt;strong&gt;Estimate:&lt;/strong&gt; 13 &lt;br /&gt;
+&lt;strong&gt;Description:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
+&lt;pre&gt;
+ 1. Click the note application on mobile phone
+ 2. Connect the local database by &quot;Room&quot; persistence library provided by Android
+ 3. Get &quot;id&quot;, &quot;title&quot;, &quot;content&quot;, &quot;create date&quot;, &quot;update date&quot; values of &quot;NOTES&quot; table for 10 records using Room
+ 4. List &quot;title&quot; and &quot;create date &quot; of each note item.
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Acceptance Criterias:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
+&lt;pre&gt;
+ 1. Show the notes as &quot;title&quot; and &quot;create date&quot; by limit 10 records.
+ 1. Listed notes must be clickable but when clicked, no action for now.
+ 2. User can load 10 notes when click &quot;load more&quot; button everytimes.
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope this article was usefull.&lt;/p&gt;
+
+&lt;p&gt;See you.&lt;/p&gt;</content><author><name>Mesut Üşenmez</name><email>mesutusenmez89@gmail.com</email></author><category term="noteapplication" /><summary type="html">Hello everyone,</summary></entry><entry><title type="html">Hello World!</title><link href="https://p2key.github.io/2021-01-23/hello-world" rel="alternate" type="text/html" title="Hello World!" /><published>2021-01-23T00:00:00+03:00</published><updated>2021-01-23T00:00:00+03:00</updated><id>https://p2key.github.io/2021-01-23/hello-world</id><content type="html" xml:base="https://p2key.github.io/2021-01-23/hello-world">&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;We are going to code something on this blog.&lt;/p&gt;
+
+&lt;p&gt;See you soon.&lt;/p&gt;</content><author><name>Mesut Üşenmez</name><email>mesutusenmez89@gmail.com</email></author><category term="hello" /><summary type="html">Hello,</summary></entry></feed>
