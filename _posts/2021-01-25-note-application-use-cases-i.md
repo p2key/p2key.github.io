@@ -30,16 +30,16 @@ It is wrote user stories to better explain the  user diagram.
 **Priority:** High <br/>
 **Estimate:** 13 <br/>
 **Description:** <br/>
-<pre>
+
  1. Click the note application on mobile phone
  2. Get notes by limit 10 from database
  3. List notes that got in.
-</pre>
+
 **Acceptance Criterias:** <br/>
-<pre>
+
  1. Listed notes must be clickable.
  2. User can load 10 notes when click "load more" button everytimes.
-</pre>
+
 
 <br/>
 <hr/>
@@ -51,10 +51,10 @@ You should explain it such that you can't ask the question of HOW.
 
 Let's write this row again.
 
-<pre>
+
  - Connect the local database by "Room" persistence library provided by Android
  - Get "id", "title", "content", "create date", "update date" values of "NOTES" table for 10 records using Room
-</pre>
+
 
 That is better than before. We explained better how to do it. But It is not still what we want. 
 
@@ -62,9 +62,9 @@ That is better than before. We explained better how to do it. But It is not stil
 
 Write the sentence again.
 
-<pre>
+
 - List "title" and "create date " of each note item.
-</pre>
+
 
 Now that's allright. 
 
@@ -79,18 +79,18 @@ In last status the user story:
 **Priority:** High <br/>
 **Estimate:** 13 <br/>
 **Description:** <br/>
-<pre>
+
  1. Click the note application on mobile phone
  2. Connect the local database by "Room" persistence library provided by Android
  3. Get "id", "title", "content", "create date", "update date" values of "NOTES" table for 10 records using Room
  4. List "title" and "create date " of each note item.
-</pre>
+
 **Acceptance Criterias:** <br/>
-<pre>
+
  1. Show the notes as "title" and "create date" by limit 10 records.
  1. Listed notes must be clickable but when clicked, no action for now.
  2. User can load 10 notes when click "load more" button everytimes.
-</pre>
+
 
 <br/>
 <hr/>

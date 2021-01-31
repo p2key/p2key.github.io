@@ -1,5 +1,4 @@
-I"�
-<p>Hello everyone,</p>
+I"�<p>Hello everyone,</p>
 
 <p>Today I’m starting to develop a new note application. I hope it helps you this article series. Because I’m going to cover all development processes on simple way.</p>
 
@@ -23,16 +22,19 @@
 <strong>Priority:</strong> High <br />
 <strong>Estimate:</strong> 13 <br />
 <strong>Description:</strong> <br /></p>
-<pre>
- 1. Click the note application on mobile phone
- 2. Get notes by limit 10 from database
- 3. List notes that got in.
-</pre>
+
+<ol>
+  <li>Click the note application on mobile phone</li>
+  <li>Get notes by limit 10 from database</li>
+  <li>List notes that got in.</li>
+</ol>
+
 <p><strong>Acceptance Criterias:</strong> <br /></p>
-<pre>
- 1. Listed notes must be clickable.
- 2. User can load 10 notes when click "load more" button everytimes.
-</pre>
+
+<ol>
+  <li>Listed notes must be clickable.</li>
+  <li>User can load 10 notes when click “load more” button everytimes.</li>
+</ol>
 
 <p><br /></p>
 <hr />
@@ -45,10 +47,10 @@ You should explain it such that you can’t ask the question of HOW.
 
 <p>Let’s write this row again.</p>
 
-<pre>
- - Connect the local database by "Room" persistence library provided by Android
- - Get "id", "title", "content", "create date", "update date" values of "NOTES" table for 10 records using Room
-</pre>
+<ul>
+  <li>Connect the local database by “Room” persistence library provided by Android</li>
+  <li>Get “id”, “title”, “content”, “create date”, “update date” values of “NOTES” table for 10 records using Room</li>
+</ul>
 
 <p>That is better than before. We explained better how to do it. But It is not still what we want.</p>
 
@@ -56,9 +58,9 @@ You should explain it such that you can’t ask the question of HOW.
 
 <p>Write the sentence again.</p>
 
-<pre>
-- List "title" and "create date " of each note item.
-</pre>
+<ul>
+  <li>List “title” and “create date “ of each note item.</li>
+</ul>
 
 <p>Now that’s allright.</p>
 
@@ -73,21 +75,28 @@ You should explain it such that you can’t ask the question of HOW.
 <strong>Priority:</strong> High <br />
 <strong>Estimate:</strong> 13 <br />
 <strong>Description:</strong> <br /></p>
-<pre>
- 1. Click the note application on mobile phone
- 2. Connect the local database by "Room" persistence library provided by Android
- 3. Get "id", "title", "content", "create date", "update date" values of "NOTES" table for 10 records using Room
- 4. List "title" and "create date " of each note item.
-</pre>
+
+<ol>
+  <li>Click the note application on mobile phone</li>
+  <li>Connect the local database by “Room” persistence library provided by Android</li>
+  <li>Get “id”, “title”, “content”, “create date”, “update date” values of “NOTES” table for 10 records using Room</li>
+  <li>List “title” and “create date “ of each note item.</li>
+</ol>
+
 <p><strong>Acceptance Criterias:</strong> <br /></p>
-<pre>
- 1. Show the notes as "title" and "create date" by limit 10 records.
- 1. Listed notes must be clickable but when clicked, no action for now.
- 2. User can load 10 notes when click "load more" button everytimes.
-</pre>
+
+<ol>
+  <li>Show the notes as “title” and “create date” by limit 10 records.</li>
+  <li>Listed notes must be clickable but when clicked, no action for now.</li>
+  <li>User can load 10 notes when click “load more” button everytimes.</li>
+</ol>
 
 <p><br /></p>
 <hr />
 
 <p><br /></p>
+
+<p>I hope this article was usefull.</p>
+
+<p>See you.</p>
 :ET

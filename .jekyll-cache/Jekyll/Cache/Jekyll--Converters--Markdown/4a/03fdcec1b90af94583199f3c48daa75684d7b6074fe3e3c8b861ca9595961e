@@ -1,4 +1,4 @@
-I"�<p>Hello everyone,</p>
+I"&<p>Hello everyone,</p>
 
 <p>Today I’m starting to develop a new note application. I hope it helps you this article series. Because I’m going to cover all development processes on simple way.</p>
 
@@ -22,11 +22,13 @@
 <strong>Priority:</strong> High <br />
 <strong>Estimate:</strong> 13 <br />
 <strong>Description:</strong> <br /></p>
-<pre>
- 1. Click the note application on mobile phone
- 2. Get notes by limit 10 from database
- 3. List notes that got in.
-</pre>
+
+<ol>
+  <li>Click the note application on mobile phone</li>
+  <li>Get notes by limit 10 from database</li>
+  <li>List notes that got in.</li>
+</ol>
+
 <p><strong>Acceptance Criterias:</strong> <br /></p>
 <pre>
  1. Listed notes must be clickable.
@@ -38,7 +40,7 @@
 
 <p><br /></p>
 
-<p>Everything is OK for the user story  ? :) Unfortunately NO! Some statements seem vague. For example; “Get notes by limit 10 from database”. How?
+<p>Everything is OK for the user story  ? :) Unfortunately NO! Some statements appear unclear. For example; “Get notes by limit 10 from database”. How?
 You should explain it such that you can’t ask the question of HOW.
 <br /></p>
 
@@ -52,4 +54,45 @@ You should explain it such that you can’t ask the question of HOW.
 <p>That is better than before. We explained better how to do it. But It is not still what we want.</p>
 
 <p>“List notes that got in”. How?</p>
+
+<p>Write the sentence again.</p>
+
+<pre>
+- List "title" and "create date " of each note item.
+</pre>
+
+<p>Now that’s allright.</p>
+
+<p>In last status the user story:</p>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<p><strong>User Story 1:</strong> Show All Notes <br />
+<strong>Priority:</strong> High <br />
+<strong>Estimate:</strong> 13 <br />
+<strong>Description:</strong> <br /></p>
+<pre>
+ 1. Click the note application on mobile phone
+ 2. Connect the local database by "Room" persistence library provided by Android
+ 3. Get "id", "title", "content", "create date", "update date" values of "NOTES" table for 10 records using Room
+ 4. List "title" and "create date " of each note item.
+</pre>
+<p><strong>Acceptance Criterias:</strong> <br /></p>
+<pre>
+ 1. Show the notes as "title" and "create date" by limit 10 records.
+ 1. Listed notes must be clickable but when clicked, no action for now.
+ 2. User can load 10 notes when click "load more" button everytimes.
+</pre>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<p>I hope this article was usefull.</p>
+
+<p>See you.</p>
 :ET

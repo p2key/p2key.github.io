@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://p2key.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://p2key.github.io/" rel="alternate" type="text/html" /><updated>2021-01-26T01:32:40+03:00</updated><id>https://p2key.github.io/feed.xml</id><title type="html">p2Key</title><subtitle>Birşeyler kodluyoruz</subtitle><author><name>Mesut Üşenmez</name><email>mesutusenmez89@gmail.com</email></author><entry><title type="html">Note Application - Use Cases-I</title><link href="https://p2key.github.io/2021-01-25/note-application-use-cases-i" rel="alternate" type="text/html" title="Note Application - Use Cases-I" /><published>2021-01-25T00:00:00+03:00</published><updated>2021-01-25T00:00:00+03:00</updated><id>https://p2key.github.io/2021-01-25/note-application-use-cases-i</id><content type="html" xml:base="https://p2key.github.io/2021-01-25/note-application-use-cases-i">&lt;p&gt;Hello everyone,&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://p2key.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://p2key.github.io/" rel="alternate" type="text/html" /><updated>2021-02-01T00:49:19+03:00</updated><id>https://p2key.github.io/feed.xml</id><title type="html">p2Key</title><subtitle>Birşeyler kodluyoruz</subtitle><author><name>Mesut Üşenmez</name><email>mesutusenmez89@gmail.com</email></author><entry><title type="html">Note Application - Use Cases-I</title><link href="https://p2key.github.io/2021-01-25/note-application-use-cases-i" rel="alternate" type="text/html" title="Note Application - Use Cases-I" /><published>2021-01-25T00:00:00+03:00</published><updated>2021-01-25T00:00:00+03:00</updated><id>https://p2key.github.io/2021-01-25/note-application-use-cases-i</id><content type="html" xml:base="https://p2key.github.io/2021-01-25/note-application-use-cases-i">&lt;p&gt;Hello everyone,&lt;/p&gt;
 
 &lt;p&gt;Today I’m starting to develop a new note application. I hope it helps you this article series. Because I’m going to cover all development processes on simple way.&lt;/p&gt;
 
@@ -22,16 +22,19 @@
 &lt;strong&gt;Priority:&lt;/strong&gt; High &lt;br /&gt;
 &lt;strong&gt;Estimate:&lt;/strong&gt; 13 &lt;br /&gt;
 &lt;strong&gt;Description:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
-&lt;pre&gt;
- 1. Click the note application on mobile phone
- 2. Get notes by limit 10 from database
- 3. List notes that got in.
-&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click the note application on mobile phone&lt;/li&gt;
+  &lt;li&gt;Get notes by limit 10 from database&lt;/li&gt;
+  &lt;li&gt;List notes that got in.&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;p&gt;&lt;strong&gt;Acceptance Criterias:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
-&lt;pre&gt;
- 1. Listed notes must be clickable.
- 2. User can load 10 notes when click &quot;load more&quot; button everytimes.
-&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Listed notes must be clickable.&lt;/li&gt;
+  &lt;li&gt;User can load 10 notes when click “load more” button everytimes.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
@@ -44,10 +47,10 @@ You should explain it such that you can’t ask the question of HOW.
 
 &lt;p&gt;Let’s write this row again.&lt;/p&gt;
 
-&lt;pre&gt;
- - Connect the local database by &quot;Room&quot; persistence library provided by Android
- - Get &quot;id&quot;, &quot;title&quot;, &quot;content&quot;, &quot;create date&quot;, &quot;update date&quot; values of &quot;NOTES&quot; table for 10 records using Room
-&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;Connect the local database by “Room” persistence library provided by Android&lt;/li&gt;
+  &lt;li&gt;Get “id”, “title”, “content”, “create date”, “update date” values of “NOTES” table for 10 records using Room&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;That is better than before. We explained better how to do it. But It is not still what we want.&lt;/p&gt;
 
@@ -55,9 +58,9 @@ You should explain it such that you can’t ask the question of HOW.
 
 &lt;p&gt;Write the sentence again.&lt;/p&gt;
 
-&lt;pre&gt;
-- List &quot;title&quot; and &quot;create date &quot; of each note item.
-&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;List “title” and “create date “ of each note item.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Now that’s allright.&lt;/p&gt;
 
@@ -72,18 +75,21 @@ You should explain it such that you can’t ask the question of HOW.
 &lt;strong&gt;Priority:&lt;/strong&gt; High &lt;br /&gt;
 &lt;strong&gt;Estimate:&lt;/strong&gt; 13 &lt;br /&gt;
 &lt;strong&gt;Description:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
-&lt;pre&gt;
- 1. Click the note application on mobile phone
- 2. Connect the local database by &quot;Room&quot; persistence library provided by Android
- 3. Get &quot;id&quot;, &quot;title&quot;, &quot;content&quot;, &quot;create date&quot;, &quot;update date&quot; values of &quot;NOTES&quot; table for 10 records using Room
- 4. List &quot;title&quot; and &quot;create date &quot; of each note item.
-&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click the note application on mobile phone&lt;/li&gt;
+  &lt;li&gt;Connect the local database by “Room” persistence library provided by Android&lt;/li&gt;
+  &lt;li&gt;Get “id”, “title”, “content”, “create date”, “update date” values of “NOTES” table for 10 records using Room&lt;/li&gt;
+  &lt;li&gt;List “title” and “create date “ of each note item.&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;p&gt;&lt;strong&gt;Acceptance Criterias:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
-&lt;pre&gt;
- 1. Show the notes as &quot;title&quot; and &quot;create date&quot; by limit 10 records.
- 1. Listed notes must be clickable but when clicked, no action for now.
- 2. User can load 10 notes when click &quot;load more&quot; button everytimes.
-&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Show the notes as “title” and “create date” by limit 10 records.&lt;/li&gt;
+  &lt;li&gt;Listed notes must be clickable but when clicked, no action for now.&lt;/li&gt;
+  &lt;li&gt;User can load 10 notes when click “load more” button everytimes.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
