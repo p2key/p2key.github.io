@@ -2,6 +2,7 @@
 title: Note Application - Use Cases-I
 tags:
 - noteapplication
+- usercase
 comments: true
 layout: post
 ---
